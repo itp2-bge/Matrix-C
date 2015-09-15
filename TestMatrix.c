@@ -22,7 +22,26 @@ int main()
 	
 	t = initmatrix(6,6); 
 	// t = initMatrix(6,6);
-	t.data[2][2] = 1;
+
+	printf("enter row num: ");
+	int rown, coln, val;
+	scanf("%d", &rown);
+
+	printf("\nenter col num: ");
+	scanf("%d", &coln);
+
+	printf("\nenter value: ");
+	scanf("%d", &val);
+
+	if (rown >= 6 || coln >= 6)
+	{
+		printf("row or col number out of bounds!\n");
+		return 1;
+	}
+
+	t.data[rown][coln] = val;
+
+	//t.data[2][2] = 1;
 	printf("matrix t:\n");
 	printMatrix(t);
 }
