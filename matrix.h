@@ -6,4 +6,4 @@ typedef struct mat {
 	
 matrix initmatrix(int row_dim, int col_dim);
 void unitMatrix(matrix *m);
-void printMatrix(matrix m);
+void printMatrix(matrix *m);

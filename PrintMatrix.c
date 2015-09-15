@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include "matrix.h"
 
-void printMatrix(matrix m)
+void printMatrix(matrix *m)
 {
 	int row, col;
 	
-	for (row =0; row < m.rows; row++)
+	for (row =0; row < m->rows; row++)
 	{
-		for(col = 0; col < m.cols; col++)
+		for(col = 0; col < m->cols; col++)
 		{
-			printf("\t %d", m.data[row][col]);
+			printf("\t %d", m->data[row][col]);
 		}
 		putchar('\n');
 	}
